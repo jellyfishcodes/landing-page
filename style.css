@@ -116,12 +116,12 @@ button{
 }
 
 .info-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax( min(150px , 100%), 1fr));
     max-width: 840px;
-    justify-content: center;
     gap: 32px;
     margin: 0 auto 128px;
-
+    padding: 0 20px;
 }
 
 .info-content-box-img-box{
@@ -157,13 +157,15 @@ button{
     max-width: 840px;
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 .quote-text{
     font-size: 36px;
     color: #1f2937;
     font-weight: 300;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto 8px;
     font-style: italic;
 }
@@ -182,7 +184,8 @@ button{
 }
 
 .sign-up{
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     background-color: #3882f6;
     display: flex;
     justify-content: center;
@@ -222,4 +225,50 @@ button{
 .footer-text{
     color: #e5e7eb;
     font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .hero-content{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    .hero-header{
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+
+    .hero-content-info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .info-content-box-img-box{
+        margin-bottom: 8px;
+    }
+
+    .quote-text{
+        margin-bottom: 24px;
+    }
+
+    .sign-up-box{
+        padding: 100px 50px;
+    }
+
+    .sign-up{
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding: 32px;
+        width: 90%;
+    }
+
+    .sign-up-info-header{
+        margin-bottom: 16px;
+    }
 }
