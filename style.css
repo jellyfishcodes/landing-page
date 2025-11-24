@@ -248,6 +248,28 @@ button{
         gap: 8px;
     }
 
+    .hero-content-info-main-text{
+        font-size: 32px;
+    }
+
+    button{
+        
+    }
+
+    .info-header,
+    .quote-text{
+        font-size: 28px;
+    }
+
+    .hero-header,
+    .hero-content,
+    .info-content,
+    .quote-box{
+        margin-bottom: 64px;
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+
     .info-content-box-img-box{
         margin-bottom: 8px;
     }
@@ -257,7 +279,7 @@ button{
     }
 
     .sign-up-box{
-        padding: 100px 50px;
+        padding: 0 25px 50px;
     }
 
     .sign-up{
