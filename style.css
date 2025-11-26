@@ -111,6 +111,10 @@ button{
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+
+    max-width: 170px;
+    width: 100%;
+    height: auto;
 }
 
 .hero-content-image{
@@ -209,17 +213,20 @@ button{
     max-width: 1024px;
     width: 100%;
     background-color: #3882f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 160px;
-    padding: 50px 0px;
+    
+    gap: 10px;
+    padding: 50px 50px;
     border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: 4.32fr 1.08fr;
+
+    
 }
 
 .sign-up-info{
     color: #f9faf8;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .sign-up-info-header{
@@ -232,9 +239,13 @@ button{
 }
 
 .sign-up-button{
-    padding: 8px 34px;
+    padding: 0;
     border: 2px solid #f9faf8;
     flex-wrap: wrap;
+
+    max-width: 170px;
+    width: 100%;
+    height: auto;
 }
 
 .footer{
@@ -284,6 +295,12 @@ button{
         font-size: 32px;
     }
 
+    button{
+        max-width: 170px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .info{
         margin: 64px 0;
     }
@@ -320,9 +337,18 @@ button{
     .sign-up{
         flex-direction: column;
         text-align: center;
+        justify-content: center;
         gap: 24px;
         padding: 32px;
         width: 90%;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sign-up-button{
+        margin: 0 auto;
+        padding: 8px 32px;
     }
 
     .sign-up-info-header{
