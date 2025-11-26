@@ -244,13 +244,21 @@ button{
         flex-direction: column-reverse;
         text-align: center;
         gap: 32px;
-        margin-bottom: 64px;
+        margin: 64px 0;
     }
 
     .hero-header{
         flex-direction: column;
         gap: 24px;
-        margin-bottom: 64px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-header-content{
+        flex-direction: column;
+        gap: 24px;
+        margin: 16px 0;
+        padding: 0;
     }
 
     .hero-content-info{
@@ -263,22 +271,29 @@ button{
         font-size: 32px;
     }
 
+    .info{
+        margin: 64px 0;
+    }
+
     .info-header,
     .quote-text{
         font-size: 28px;
     }
 
-    .hero-header,
-    .hero-content,
-    .info-content,
-    .quote-box{
-        margin-bottom: 64px;
-        padding-bottom: 64px;
-        padding-top: 64px;
+    .info-header{
+        padding: 0 48px 48px;
+    }
+
+    .info-content{
+        margin: 0 auto;
     }
 
     .info-content-box-img-box{
         margin-bottom: 8px;
+    }
+
+    .quote-box{
+        padding: 64px 0;
     }
 
     .quote-text{
@@ -286,7 +301,7 @@ button{
     }
 
     .sign-up-box{
-        padding: 0 25px 50px;
+        padding: 64px 32px;
     }
 
     .sign-up{
@@ -299,5 +314,9 @@ button{
 
     .sign-up-info-header{
         margin-bottom: 16px;
+    }
+
+    .footer{
+        padding: 32px;
     }
 }
