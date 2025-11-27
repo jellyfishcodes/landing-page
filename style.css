@@ -260,6 +260,25 @@ button{
     font-size: 18px;
 }
 
+button, .hero-content-info-button, .sign-up-button {
+    /* Gradient instead of solid color */
+    background-image: linear-gradient(135deg, #3882f6 0%, #2563eb 100%);
+    box-shadow: 0 4px 14px 0 rgba(56, 130, 246, 0.39);
+    
+    /* Transition for the click */
+    transition: transform 0.1s ease;
+}
+
+/* Make it feel clicky */
+button:active {
+    transform: scale(0.96); /* Shrinks slightly when clicked */
+}
+
+.hero, .hero-header {
+    /* Change background-color to this: */
+    background: linear-gradient(to right, #1f2937, #111827); 
+}
+
 @media screen and (max-width: 700px) {
 
     .hero-content{
