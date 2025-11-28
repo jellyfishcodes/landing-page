@@ -45,6 +45,8 @@ a{
     background-color: #1f2937;
     position: sticky;
     top: 0;
+
+    z-index: 9999;
 }
 
 .hero-header-content{
