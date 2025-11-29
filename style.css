@@ -231,7 +231,7 @@ button{
 .sign-up{
     max-width: 1024px;
     width: 100%;
-    background-color: #3882f6;
+    background-color: #1d4ed8;
     
     gap: 10px;
     padding: 50px 50px;
@@ -267,6 +267,7 @@ button{
     padding: 8px 32px;
     border: 2px solid #f9faf8;
     flex-wrap: wrap;
+    background-color:#1d4ed8;
 
     max-width: 170px;
     width: 100%;
